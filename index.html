@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: Music for Everyone</title>
+    <link rel="shortcut icon" href="/Media/logos/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="leftstyle.css">
+    <link rel="stylesheet" href="rightstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- for left side of the page -->
+        <div class="left">
+            <div class="leftUpper">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="/Media/logos/logo.svg" alt="Spotify Logo" id="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="/Media/logos/home.svg" alt="Home Button" id="home">
+                            <span class="navLinks"><b>Home</b></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/Media/logos/search.svg" alt="Search button" id="search">
+                            <span class="navLinks"><b>Search</b></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="leftLower">
+                <div class="leftLower-Upper">
+                    <div id="libraryBox">
+                        <img src="/Media/logos/Library.svg" alt="Library Icon" id="library">
+                        <span class="navLinks">Your Library</span>
+                    </div>
+                    <img src="/Media/logos/AddLibrary.svg" alt="Add to library icon" id="addToLibrary">
+                </div>
+                <div class="leftLower-Middle">
+                    <div id="playlists" class="navCards">
+                        <div>
+                            <b>Create your first playlist</b>
+                        </div>
+                        <div>
+                            It's easy, we'll help you
+                        </div>
+                        <button id="btn">Create playlist</button>
+                    </div>
+                    <div id="podcasts" class="navCards">
+                        <div>
+                            <b>Let's find some podcasts to follow</b>
+                        </div>
+                        <div>
+                            We'll keep you updated on new episodes
+                        </div>
+                        <button id="btn">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="leftLower-Lower">
+                    <div>
+                        <div>
+                            <a href="#">Legal</a>
+                            <a href="#">Safety & Privacy center</a>
+                        </div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">cookies</a>
+                            <a href="#">About Ads</a>
+                        </div>
+                        <div>
+                            <a href="#">Accessibility</a>
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                    <button id="languageBtn">
+                        <img src="/Media/logos/LanguageSymbol.svg" alt="" id="btnImg">
+                        <span>English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- for right side of the page -->
+        <div class="right">
+            <div class="rightUpper">
+                <div class="navigation">
+                    <button class="navigateButton"><img src="/Media/logos/back.svg" alt="back button" class="navButton"></button>
+                    <button class="navigateButton"><img src="/Media/logos/undoBack.svg" alt="undo Back button" class="navButton"></button>
+                </div>
+                <div class="loginSignup">
+                    <button id="signupButton"><b>Sign up</b></button>
+                    <button id="loginButton"><b>Log in</b></button>
+                </div>
+            </div>
+            <div class="rightLower">
+                <div class="content">
+                    <div class="popularArtists">
+                        <div class="ArtistHeader">
+                            <h2><a href="#" class="headings">Popular artists</a></h2>
+                            <button id="showAll">Show all</button>
+                        </div>
+                        <div class="artistCardsContainer">
+                            <div class="artistsCards">
+                                <img src="/Media/singersImage/pritam.jpg" alt="Pritam image" class="artistCardImage">
+                                <div class="artistCardDesc">
+                                    <h4>Pritam</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="artistsCards">
+                                <img src="/Media/singersImage/arijit.jpeg" alt="Arijit singh image" class="artistCardImage">
+                                <div class="artistCardDesc">
+                                    <h4>Arijit Singh</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="artistsCards">
+                                <img src="/Media/singersImage/AR_Rehman.JPG" alt="A.R. Rehman Image" class="artistCardImage">
+                                <div class="artistCardDesc">
+                                    <h4>A.R. Rehman</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="artistsCards">
+                                <img src="/Media/singersImage/kk.jpg" alt="kk image" class="artistCardImage">
+                                <div class="artistCardDesc">
+                                    <h4>K.K.</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="artistsCards">
+                                <img src="/Media/singersImage/Vishal Mishra.jpg" alt="Vishal Mishra" class="artistCardImage">
+                                <div class="artistCardDesc">
+                                    <h4>Vishal Mishra</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="artistsCards">
+                                <img src="/Media/singersImage/Sidhu_Moose_Wala.jpg" alt="Sidhu Moose Wala" class="artistCardImage">
+                                <div class="artistCardDesc">
+                                    <h4>Sidhu Moose Wala</h4>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spotifyPlaylists">
+                        <div class="playlistCards">
+                            <img src="" alt="">
+                            <div class="Desc">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="playlistCards"></div>
+                        <div class="playlistCards"></div>
+                        <div class="playlistCards"></div>
+                        <div class="playlistCards"></div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footerLinks">
+
+                </div>
+                <div class="copyright">
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="logic.js"></Script>
+</body>
+</html>
