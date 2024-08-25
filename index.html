@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web player: Music for Everyone</title>
+    <link
+      rel="shortcut icon"
+      href="Media/logos/Favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- for left side of the page -->
+      <div class="left">
+        <div class="leftUpper">
+          <a href="/">
+            <img src="Media/logos/logo.svg" alt="Spotify Logo" id="logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="/">
+                <img src="Media/logos/home.svg" alt="Home Button" id="home" />
+                <span class="navLinks"><b>Home</b></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="Media/logos/search.svg"
+                  alt="Search button"
+                  id="search"
+                />
+                <span class="navLinks"><b>Search</b></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="leftLower">
+          <div class="leftLower-Upper">
+            <div id="libraryBox">
+              <img
+                src="Media/logos/Library.svg"
+                alt="Library Icon"
+                id="library"
+              />
+              <span class="navLinks">Your Library</span>
+            </div>
+            <img
+              src="Media/logos/AddLibrary.svg"
+              alt="Add to library icon"
+              id="addToLibrary"
+            />
+          </div>
+          <div class="leftLower-Middle">
+            <div class="songsList">
+              
+            </div>
+            
+          </div>
+          <div class="leftLower-Lower">
+            <div>
+              <div>
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy center</a>
+              </div>
+              <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">cookies</a>
+                <a href="#">About Ads</a>
+              </div>
+              <div>
+                <a href="#">Accessibility</a>
+                <a href="#">Cookies</a>
+              </div>
+            </div>
+            <button id="languageBtn">
+              <img src="Media/logos/LanguageSymbol.svg" alt="" id="btnImg" />
+              <span>English</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- for right side of the page -->
+      <div class="right">
+        <div class="rightUpper">
+          <div class="navigation">
+            <button class="navigateButton">
+              <img
+                src="Media/logos/back.svg"
+                alt="back button"
+                class="navButton"
+              />
+            </button>
+            <button class="navigateButton">
+              <img
+                src="Media/logos/undoBack.svg"
+                alt="undo Back button"
+                class="navButton"
+              />
+            </button>
+          </div>
+          <div class="loginSignup">
+            <button id="signupButton"><b>Sign up</b></button>
+            <button id="loginButton"><b>Log in</b></button>
+          </div>
+        </div>
+        <div class="rightLower">
+          <div class="content">
+            <div class="popularArtists">
+              <div class="SectionHeader">
+                <h2><a href="#" class="headings">Popular artists</a></h2>
+                <button class="showAll">Show all</button>
+              </div>
+              <div class="artistCardsContainer">
+                <div class="artistsCards" id="pritamCard">
+                  <img
+                    src="Media/singersImage/pritam.jpg"
+                    alt="Pritam image"
+                    class="artistCardImage"
+                  />
+                  <div class="artistCardDesc">
+                    <h4>Pritam</h4>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="artistsCards" id="arijitCard">
+                  <img
+                    src="Media/singersImage/arijit.jpeg"
+                    alt="Arijit singh image"
+                    class="artistCardImage"
+                  />
+                  <div class="artistCardDesc" id="arijit">
+                    <h4>Arijit Singh</h4>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="artistsCards" id="rehmanCard">
+                  <img
+                    src="Media/singersImage/AR_Rehman.JPG"
+                    alt="A.R. Rehman Image"
+                    class="artistCardImage"
+                  />
+                  <div class="artistCardDesc">
+                    <h4>A.R. Rehman</h4>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="artistsCards" id="kkCard">
+                  <img
+                    src="Media/singersImage/kk.jpg"
+                    alt="kk image"
+                    class="artistCardImage"
+                  />
+                  <div class="artistCardDesc">
+                    <h4>K.K.</h4>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="artistsCards" id="vishalCard">
+                  <img
+                    src="Media/singersImage/Vishal Mishra.jpg"
+                    alt="Vishal Mishra"
+                    class="artistCardImage"
+                  />
+                  <div class="artistCardDesc">
+                    <h4>Vishal Mishra</h4>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div class="artistsCards" id="sidhuCard">
+                  <img
+                    src="Media/singersImage/Sidhu_Moose_Wala.jpg"
+                    alt="Sidhu Moose Wala"
+                    class="artistCardImage"
+                  />
+                  <div class="artistCardDesc">
+                    <h4>Sidhu Moose Wala</h4>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="spotifyPlaylists">
+              <div class="SectionHeader">
+                <h2><a href="#" class="headings">Spotify Playlists</a></h2>
+                <button class="showAll">Show all</button>
+              </div>
+              <div class="playlistCardsContainer">
+                <div class="playlistCards" id="punjabi">
+                  <img
+                    src="https://mosaic.scdn.co/300/ab67616d00001e020f6ec5e1d04815f7926d3293ab67616d00001e02108cb8774070487be010653cab67616d00001e0228c90366eb01fbb476a981e4ab67616d00001e02a0d5455d170b114ff5f32768"
+                    alt="playlist cover photo"
+                  />
+                  <div class="playlistDesc">
+                    <h4>Punjabi Song</h4>
+                    <p>By Gaurav Sharma</p>
+                  </div>
+                </div>
+                <div class="playlistCards" id="party"> 
+                  <img
+                    src="https://i2o.scdn.co/image/ab67706c0000cfa30340e79d15bb2a6e3425c6a6"
+                    alt="playlist cover photo"
+                  />
+                  <div class="playlistDesc">
+                    <h4>Bollywood Party Hits</h4>
+                    <p>y soundd Asia</p>
+                  </div>
+                </div>
+                <div class="playlistCards" id="happy">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002518096c62a9e453db38093db"
+                    alt="playlist cover photo"
+                  />
+                  <div class="playlistDesc">
+                    <h4>Happy Bits</h4>
+                    <p>Feel-good dance Music</p>
+                  </div>
+                </div>
+                <div class="playlistCards" id="dance">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002c3dc317a579a10d7cdd5da1e"
+                    alt="playlist cover photo"
+                  />
+                  <div class="playlistDesc">
+                    <h4>All New Dance</h4>
+                    <p>This week's new handpicked dance music</p>
+                  </div>
+                </div>
+                <div class="playlistCards" id="perfect">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f0000000266cb92cea6b724ef758a2379"
+                    alt="playlist cover photo"
+                  />
+                  <div class="playlistDesc">
+                    <h4>A Perfect Day</h4>
+                    <p>
+                      Timeless melodies from your favourite artists, both old
+                      and new.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="footerLinks">
+              <div id="companyLinks" class="footerSection">
+                <h4>Company</h4>
+                <div class="div">
+                  <a href="#">About</a>
+                </div>
+                <div class="div">
+                  <a href="#">Jobs</a>
+                </div>
+                <div class="div">
+                  <a href="#">For the Record</a>
+                </div>
+              </div>
+              <div id="CommunitiesLinks" class="footerSection">
+                <h4>Communities</h4>
+                <div><a href="#">For Artists</a></div>
+                <div><a href="#">Developers</a></div>
+                <div><a href="#">Advertising</a></div>
+                <div><a href="#">Investors</a></div>
+                <div><a href="#">Vendors</a></div>
+              </div>
+              <div id="UsefulLinks" class="footerSection">
+                <h4>Useful links</h4>
+                <div><a href="#">Support</a></div>
+                <div><a href="#">Free Mobile App</a></div>
+              </div>
+              <div id="SpotifyPlans" class="footerSection">
+                <h4>Spotify Plans</h4>
+                <div><a href="#">Premium Individual</a></div>
+                <div><a href="#">Premium Duo</a></div>
+                <div><a href="#">Premium Family</a></div>
+                <div><a href="#">Premium Student</a></div>
+                <div><a href="#">Spotify Free</a></div>
+              </div>
+              <div id="socialLinks" class="footerSection">
+                <button>
+                  <div><img src="Media/logos/insta.svg" alt="insta" /></div>
+                </button>
+                <button>
+                  <div>
+                    <img src="Media/logos/tweeter.svg" alt="tweeter" />
+                  </div>
+                </button>
+                <button>
+                  <div>
+                    <img src="Media/logos/facebook.svg" alt="facebook" />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <hr id="footerSeparator" />
+            <div class="copyright">
+              <a href="#">© 2024 Spotify AB</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Here the down player -->
+    <div class="player">
+      <div class="songInfo">
+        <img src="Media/logos/music.svg" alt="" id="playerImage">
+      </div>
+      <div class="middleControl">
+        <div class="songControls">
+            <button class="controlButtons" id="preButton">
+                <img src="Media/logos/previousPlay.svg" alt="" id="previousPlay" />
+            </button>
+          <button class="controlButtons" id="playpause">
+            <div id="playButton">
+              <img src="Media/logos/play.svg" alt="" class="ControlsButton" id="playImage" />
+            </div>
+          </button>
+          <button class="controlButtons" id="nextButton">
+            <img src="Media/logos/nextPlay.svg" alt="" id="nextPlay" />
+          </button>
+        </div>
+        <div class="progress">
+          <span id="currTime">0.00</span>
+          <progress id="progrssBar">0</progress>
+          <span id="totalTime">0.00</span>
+        </div>
+      </div>
+      <div class="animation">
+      </div>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>
